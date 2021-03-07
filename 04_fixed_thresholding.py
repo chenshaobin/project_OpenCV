@@ -11,6 +11,11 @@ cv2.waitKey(0)
 """
 
 # 不同阈值方式的比较
+"""
+    # 参数说明
+    # 参数2：  设定的阈值
+    # 参数3: 阈值方法所选用的最大阈值
+"""
 ret, th1 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 ret, th2 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY_INV)
 ret, th3 = cv2.threshold(img, 127, 255, cv2.THRESH_TRUNC)
